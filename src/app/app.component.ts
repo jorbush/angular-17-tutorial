@@ -6,8 +6,7 @@ import { UserComponent } from "./user/user.component";
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, UserComponent],
-  template: `<h1>Hello world from {{ city.toUpperCase() }}</h1>
-  <app-user/>`,
+  templateUrl: './app.component.html',
   styles: ['']
 })
 export class AppComponent {
