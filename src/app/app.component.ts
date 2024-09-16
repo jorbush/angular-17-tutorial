@@ -5,9 +5,9 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `<h1>Hello world from {{ city }}</h1>`,
+  styles: ['h1 { color: red; }']
 })
 export class AppComponent {
-  title = 'angular-17-tutorial';
+  city = 'Barcelona';
 }
