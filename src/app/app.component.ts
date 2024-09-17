@@ -7,7 +7,7 @@ import { UserComponent } from "./user/user.component";
   standalone: true,
   imports: [RouterOutlet, UserComponent],
   templateUrl: './app.component.html',
-  styles: ['']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   city = 'Barcelona';
