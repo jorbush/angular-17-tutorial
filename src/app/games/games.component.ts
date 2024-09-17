@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-games',
   standalone: true,
   imports: [],
   template: `
+    <h3>Favorite games of {{ username }}</h3>
     <ul>
       @for (game of games; track game.id) {
         <li>{{ game.name }}</li>
@@ -14,18 +15,19 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class GamesComponent {
+  @Input() username = '';
   games = [
     {
       id: 1,
-      name: 'Super Mario Bros'
+      name: 'Pokémon Emerald'
     },
     {
       id: 2,
-      name: 'Zelda'
+      name: 'Bloodborne'
     },
     {
       id: 3,
-      name: 'Donkey Kong'
+      name: 'The Legend of Zelda: Tears of the Kingdom'
     }
   ]
 }
