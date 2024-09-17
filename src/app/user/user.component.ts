@@ -10,7 +10,7 @@ import { GamesComponent } from "../games/games.component";
 })
 export class UserComponent {
   username = 'jorbush';
-  isLogged = true;
+  isLogged = false;
 
   greet() {
     alert(`Hello, ${this.username}!`);
